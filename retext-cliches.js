@@ -47,7 +47,7 @@ function attacher(processor, options) {
             var value = quotation(nlcstToString(match), '“', '”');
             var message = 'Warning: ' + value  + ' is a cliche';
 
-            message = file.warn(message, {
+            message = file.info(message, {
                 'start': match[0].position.start,
                 'end': match[match.length - 1].position.end
             });
